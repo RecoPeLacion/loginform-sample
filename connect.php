@@ -1,14 +1,13 @@
 <?php
 
-$host="localhost";
-$user="root";
-$pass="";
-$db="db_workimmersion";
-$conn=new mysqli($host,$user,$pass,$db);
-if($conn->connect_error){
-    echo "Fail to connect DB".$conn->connect_error;
-    exit();
-}
+    $host = "localhost";
+    $user = "root";
+    $password = "";
+    $db = "db_workimmersion";
 
-echo "Connected successfully";
+    $conn = new mysqli($host, $user, $password, $db);
+    if( $conn->connect_error ) {
+        echo "Failed to connect DB" . $conn->connect_error;
+    }
+
 ?>
